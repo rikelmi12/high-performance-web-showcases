@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f0efe9" />
+  <meta name="description" content="SoftTec — sistemas web, automações e experiências digitais sob medida por Ruan Rikelmi." />
+  <meta name="author" content="Ruan Rikelmi" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://softcore.cloud/softtec/" />
+  <link rel="icon" type="image/png" sizes="64x64" href="./assets/favicon-softtec-v2-64.png" />
+  <link rel="apple-touch-icon" href="./assets/favicon-softtec-v2-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="SoftTec" />
+  <meta property="og:title" content="SoftTec — Sistemas que movem negócios" />
+  <meta property="og:description" content="Sistemas web, automações e experiências digitais sob medida." />
+  <meta property="og:url" content="https://softcore.cloud/softtec/" />
+  <meta property="og:image" content="https://softcore.cloud/softtec/assets/og-softtec.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SoftTec — Sistemas que movem negócios" />
+  <meta name="twitter:description" content="Sistemas web, automações e experiências digitais sob medida." />
+  <meta name="twitter:image" content="https://softcore.cloud/softtec/assets/og-softtec.png" />
+  <title>SoftTec — Sistemas que movem negócios</title>
+  <link rel="stylesheet" href="./softtec.css?v=20261019-v32" />
+  <script>document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Ruan Rikelmi",
+    "url":"https://softcore.cloud/softtec/",
+    "image":"https://softcore.cloud/softtec/assets/ruan-rikelmi.jpeg",
+    "jobTitle":"Desenvolvedor de sistemas",
+    "knowsAbout":["Desenvolvimento web","Node.js","JavaScript","SQLite","Automação","Bancos de dados"]
+  }
+  </script>
+  <noscript><style>.loader{display:none!important}body.loading{overflow:auto!important}.reveal-up{opacity:1!important;transform:none!important}.hero-line>span{transform:none!important}.word{opacity:1!important}</style></noscript>
+</head>
+<body class="loading">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <div class="loader" aria-hidden="true">
+    <canvas id="loader-warp" class="loader__warp"></canvas>
+    <div class="loader__grid"></div>
+    <div class="loader__orb"></div>
+
+    <div class="loader__top">
+      <span>SOFTTEC® / DIGITAL STUDIO</span>
+      <span class="loader__status"><i></i> INITIALIZING EXPERIENCE</span>
+    </div>
+
+    <div class="loader__center">
+      <div class="loader__eyebrow">SYSTEMS · AUTOMATION · DIGITAL EXPERIENCES</div>
+      <div class="loader__brand" aria-label="SOFTTEC">
+        <span class="loader__word">SOFT</span><span class="loader__word loader__word--hot">TEC</span>
+      </div>
+      <div class="loader__signature">IDEAS → SYSTEMS → IMPACT</div>
+    </div>
+
+    <div class="loader__terminal">
+      <span id="loader-log">&gt; 01_ COMPILING KINETIC SHADERS...</span>
+    </div>
+
+    <div class="loader__bottom">
+      <div class="loader__meta"><span>SMALL CITY</span><span>BIG SYSTEMS</span><span>2026</span></div>
+      <div class="loader__progress">
+        <div class="loader__track"><i></i></div>
+        <div class="loader__numbers"><span>LOADING</span><strong class="loader__count">00</strong><em>%</em></div>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var cvs = document.getElementById('loader-warp');
+    if(!cvs) return;
+    var ctx = cvs.getContext('2d');
+    var w = cvs.width = window.innerWidth;
+    var h = cvs.height = window.innerHeight;
+    var n = w < 768 ? 160 : 340;
+    var stars = window.__WARP_STARS = [];
+    for(var i=0; i<n; i++){
+      stars.push({
+        x: (Math.random() - 0.5) * w * 2,
+        y: (Math.random() - 0.5) * h * 2,
+        z: Math.random() * w,
+        prevZ: Math.random() * w,
+        color: Math.random() > 0.35 ? '#ff5b45' : '#ffffff'
+      });
+    }
+    window.__WARP_SPEED = 1.2;
+    window.__WARP_ACTIVE = false;
+    window.addEventListener('resize', function(){ w = cvs.width = window.innerWidth; h = cvs.height = window.innerHeight; }, {passive:true});
+    function loop(){
+      if(window.__WARP_ACTIVE){
+        ctx.fillStyle = 'rgba(7, 7, 6, 0.22)';
+        ctx.fillRect(0, 0, w, h);
+      } else {
+        ctx.clearRect(0, 0, w, h);
+      }
+      var cx = w / 2, cy = h / 2;
+      var spd = window.__WARP_SPEED || 1.2;
+      for(var i=0; i<n; i++){
+        var s = stars[i];
+        s.prevZ = s.z;
+        s.z -= spd;
+        if(s.z <= 0){
+          s.z = w;
+          s.prevZ = w;
+          s.x = (Math.random() - 0.5) * w * 2;
+          s.y = (Math.random() - 0.5) * h * 2;
+        }
+        var k = 260 / s.z;
+        var px = s.x * k + cx;
+        var py = s.y * k + cy;
+        if(px >= 0 && px <= w && py >= 0 && py <= h){
+          var pk = 260 / s.prevZ;
+          var ppx = s.x * pk + cx;
+          var ppy = s.y * pk + cy;
+          ctx.strokeStyle = s.color;
+          ctx.lineWidth = Math.min(3.2, (1 - s.z / w) * 2.8);
+          ctx.beginPath();
+          ctx.moveTo(ppx, ppy);
+          ctx.lineTo(px, py);
+          ctx.stroke();
+        }
+      }
+      var ldr = document.querySelector('.loader');
+      if(!ldr || !ldr.classList.contains('is-done')) {
+        requestAnimationFrame(loop);
+      }
+    }
+    requestAnimationFrame(loop);
+  })();
+  </script>
+
+  <div class="cursor" aria-hidden="true"><span>VIEW</span></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cinema-bars" aria-hidden="true"><i></i><i></i></div>
+  <div class="section-flash" aria-hidden="true"></div>
+  <div class="ambient-aura" aria-hidden="true"></div>
+  <canvas id="ambient-dust" class="ambient-dust" aria-hidden="true"></canvas>
+  <div class="noise-sweep" aria-hidden="true"></div>
+  <div class="mouse-trail" aria-hidden="true"></div>
+  <svg class="fx-defs" aria-hidden="true" width="0" height="0">
+    <filter id="case-distort" x="-12%" y="-12%" width="124%" height="124%">
+      <feTurbulence id="case-noise" type="fractalNoise" baseFrequency="0.008 0.018" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap id="case-displace" in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B"/>
+    </filter>
+  </svg>
+
+  <header class="topbar" id="top">
+    <a class="logo" href="#hero" aria-label="SoftTec — início">
+      <img src="./assets/favicon-softtec-v2-64.png" alt="" width="48" height="48" />
+      <span>SOFT<span>TEC</span></span>
+    </a>
+
+    <div class="topbar__meta" aria-hidden="true">
+      <span>São Miguel do Araguaia · GO</span>
+      <span class="live-dot"></span>
+      <span>Disponível para projetos</span>
+    </div>
+
+    <div class="topbar__actions">
+      <button class="sound-toggle" type="button" aria-label="Ativar efeitos sonoros" title="Ativar/Desativar som">
+        <span>AUDIO</span>
+        <div class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      </button>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel">
+        <span>Menu</span><i></i>
+      </button>
+    </div>
+  </header>
+
+  <aside class="menu-panel" id="menu-panel" aria-hidden="true">
+    <div class="menu-panel__inner">
+      <span class="menu-panel__eyebrow">Navegação / 2026</span>
+      <nav aria-label="Menu principal">
+        <a href="#work"><span>01</span><span class="nav-label">Trabalho</span></a>
+        <a href="#services"><span>02</span><span class="nav-label">Serviços</span></a>
+        <a href="#lab"><span>03</span><span class="nav-label">Lab</span></a>
+        <a href="#about"><span>04</span><span class="nav-label">Sobre</span></a>
+        <a href="#contact"><span>05</span><span class="nav-label">Contato</span></a>
+      </nav>
+      <div class="menu-panel__footer">
+        <span>SoftTec / sistemas sob medida</span>
+        <a href="mailto:ruanamr2@gmail.com">ruanamr2@gmail.com <svg class="icon-arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <canvas class="hero__webgl" id="hero-webgl" aria-hidden="true"></canvas>
+      <div class="hero__scan" aria-hidden="true"></div>
+      <div class="hero__orb orb-a" aria-hidden="true"></div>
+      <div class="hero__orb orb-b" aria-hidden="true"></div>
+
+      <div class="hero__kicker reveal-up">
+        <span>Independent digital studio</span>
+        <span>Web · Systems · Automation</span>
+      </div>
+
+      <h1 class="hero__title" aria-label="Tecnologia que move negócios">
+        <span class="hero-line"><span>TECNOLOGIA</span></span>
+        <span class="hero-line hero-line--shift"><span>QUE <em>MOVE</em></span></span>
+        <span class="hero-line"><span>NEGÓCIOS.</span></span>
+      </h1>
+
+      <div class="hero__bottom reveal-up">
+        <p>Eu transformo processos reais em sistemas claros, rápidos e feitos para crescer.</p>
+        <a href="#work" class="round-link magnetic" aria-label="Ver projetos">
+          <span>Explorar</span><b>↓</b>
+        </a>
+      </div>
+
+      <div class="hero__index" aria-hidden="true">ST / 001</div>
+      <div class="hero__coordinates" aria-hidden="true"><span>13°16′S</span><span>50°09′W</span></div>
+      <div class="hero__ghost" aria-hidden="true">SOFTTEC</div>
+      <div class="hero__signal" aria-hidden="true">
+        <span>SIGNAL</span><i></i><b>LIVE</b>
+      </div>
+      <div class="hero__axis" aria-hidden="true"><i></i><i></i></div>
+    </section>
+
+    <section class="manifesto" aria-label="Apresentação">
+      <div class="manifesto__label reveal-up">[ O que fazemos ]</div>
+      <p class="manifesto__text split-words">
+        Software não precisa parecer complicado. A SoftTec cria experiências digitais que organizam a operação, automatizam o repetitivo e deixam o negócio pronto para o próximo passo.
+      </p>
+      <div class="manifesto__side reveal-up">
+        <span>Estratégia</span><span>Design</span><span>Desenvolvimento</span><span>Evolução</span>
+      </div>
+    </section>
+
+    <section class="signal" aria-label="SoftTec signal lab">
+      <div class="signal__pin">
+        <canvas id="signal-canvas" class="signal__canvas" aria-hidden="true"></canvas>
+        <div class="signal__grid" aria-hidden="true"></div>
+        <div class="signal__hud" aria-hidden="true">
+          <span>SOFTTEC / SIGNAL LAB</span><span>REAL-TIME / 04</span>
+        </div>
+        <div class="signal__copy">
+          <span class="signal__eyebrow">[ Produto digital com presença ]</span>
+          <h2><span>SEU NEGÓCIO</span><span class="signal__stroke">NÃO PRECISA</span><span>PARECER COMUM.</span></h2>
+          <p>Design chama a atenção. Sistema bem construído segura a operação. A SoftTec entrega os dois no mesmo produto.</p>
+        </div>
+        <div class="signal__telemetry" aria-hidden="true">
+          <span><b>01</b> DESIGN</span><span><b>02</b> CODE</span><span><b>03</b> SYSTEM</span><span><b>04</b> SCALE</span>
+        </div>
+        <div class="signal__crosshair" aria-hidden="true"><i></i><i></i><b></b></div>
+      </div>
+    </section>
+
+    <section class="experience" aria-label="Experiência SoftTec">
+      <div class="experience__pin">
+        <div class="experience__hud" aria-hidden="true"><span>STUDIO MODE</span><span>02 / EXPERIENCE</span></div>
+        <p class="experience__eyebrow reveal-up">[ Ideia → produto → operação ]</p>
+        <div class="experience__stage" aria-hidden="true">
+          <span class="experience__word experience__word--a">PENSAR</span>
+          <span class="experience__word experience__word--b">CRIAR</span>
+          <span class="experience__word experience__word--c">MOVER</span>
+          <div class="experience__sphere"></div>
+        </div>
+        <div class="experience__copy reveal-up">
+          <p>Design que chama atenção.</p>
+          <p>Tecnologia que aguenta o trabalho.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portal" aria-label="Sistema em movimento">
+      <div class="portal__pin">
+        <div class="portal__hud" aria-hidden="true"><span>SOFTTEC / CORE</span><span>LIVE SYSTEM 03</span></div>
+        <div class="portal__rings" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i>
+          <b class="portal__core"></b>
+        </div>
+        <div class="portal__copy">
+          <span class="portal__label">[ Do caos ao fluxo ]</span>
+          <h2><span>BUILD</span><span class="portal__outline">SHIP</span><span>EVOLVE</span></h2>
+          <p>Sistemas que não ficam parados. Eles recebem dados, tomam forma e acompanham o crescimento do negócio.</p>
+        </div>
+        <div class="portal__meter" aria-hidden="true"><span>00</span><i></i><span>100</span></div>
+      </div>
+    </section>
+
+    <section class="singularity" id="singularity" aria-label="SoftTec digital core">
+      <div class="singularity__pin">
+        <canvas id="singularity-canvas" class="singularity__canvas" aria-hidden="true"></canvas>
+        <div class="singularity__veil" aria-hidden="true"></div>
+        <div class="singularity__hud" aria-hidden="true"><span>SOFTTEC / DIGITAL CORE</span><span>05 — FINAL BOSS</span></div>
+        <div class="singularity__copy">
+          <span class="singularity__eyebrow">[ Presença + produto + engenharia ]</span>
+          <h2><span>NÃO É</span><span class="singularity__outline">SÓ UM SITE.</span><span>É UMA <em>ENTRADA.</em></span></h2>
+          <p>Antes da reunião começar, a percepção de valor já começou. A experiência abre a porta; o sistema prova que existe engenharia por trás dela.</p>
+        </div>
+        <div class="singularity__orbit" aria-hidden="true"><span>DESIGN</span><span>CODE</span><span>AUTOMATION</span><span>SCALE</span></div>
+        <div class="singularity__progress" aria-hidden="true"><b>00</b><i><em></em></i><b>100</b></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>WEB SYSTEMS</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>AUTOMATION</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>APIs</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>DATA</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>EXPERIENCES</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i>
+        <span>WEB SYSTEMS</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>AUTOMATION</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>APIs</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>DATA</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>EXPERIENCES</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="section-top reveal-up">
+        <span>[ Trabalho selecionado ]</span>
+        <span>01 — 03</span>
+      </div>
+
+      <!-- CASE 01: MORADA DA PIZZA -->
+      <article class="case" data-cursor="VER" id="case-morada">
+        <div class="case__head reveal-up">
+          <div>
+            <span class="case__meta">01 / Sistema web · operação · automação</span>
+            <h2>MORADA<br><em>DA PIZZA</em></h2>
+          </div>
+          <p>Uma operação digital conectada: cardápio, pedidos, caixa, cadastros e fluxo interno em um único sistema.</p>
+        </div>
+
+        <div class="case__visual tilt-zone">
+          <div class="case__background" aria-hidden="true">
+            <span>MORADA</span><span>01</span>
+          </div>
+          <figure class="screen screen--one parallax-card" data-mobile-index="01 / 02" data-mobile-title="PAINEL ADMINISTRATIVO">
+            <div class="screen__tilt">
+              <div class="screen__bar"><i></i><i></i><i></i><small>softtec / admin</small></div>
+              <img src="./assets/morada-admin.webp" alt="Tela administrativa do sistema Morada da Pizza" width="320" height="630" loading="lazy" />
+            </div>
+          </figure>
+          <figure class="screen screen--two parallax-card" data-mobile-index="02 / 02" data-mobile-title="CAIXA &amp; OPERAÇÃO">
+            <div class="screen__tilt">
+              <div class="screen__bar"><i></i><i></i><i></i><small>softtec / caixa</small></div>
+              <img src="./assets/morada-caixa.webp" alt="Tela de caixa do sistema Morada da Pizza" width="390" height="844" loading="lazy" />
+            </div>
+          </figure>
+          <div class="case__stamp" aria-hidden="true">REAL CASE · 2026 · REAL CASE · 2026 ·</div>
+          <div class="case__glow" aria-hidden="true"></div>
+          <div class="case__warp-label" aria-hidden="true"><span>MOVE CURSOR</span><i></i><b>LIQUID VIEW</b></div>
+        </div>
+
+        <div class="case__foot reveal-up">
+          <ul>
+            <li>Cardápio responsivo</li>
+            <li>Painel administrativo</li>
+            <li>Caixa &amp; operação</li>
+            <li>Infraestrutura web</li>
+          </ul>
+          <a href="https://softcore.cloud/morada/" target="_blank" rel="noopener" class="case__cta">Ver projeto ao vivo <svg class="icon-arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+        </div>
+      </article>
+
+      <!-- CASE 02: NEXUS CORE ERP -->
+      <article class="case" data-cursor="EXPLORAR" id="case-nexus">
+        <div class="case__head reveal-up">
+          <div>
+            <span class="case__meta">02 / SaaS · Telemetria em tempo real · Dashboard</span>
+            <h2>NEXUS<br><em>CORE ERP</em></h2>
+          </div>
+          <p>Plataforma analítica e telemetria de alta densidade: monitoramento de instâncias, latência global e métricas de infraestrutura em tempo real.</p>
+        </div>
+
+        <div class="case__visual case__visual--wide tilt-zone">
+          <div class="case__background" aria-hidden="true">
+            <span>NEXUS</span><span>02</span>
+          </div>
+          <figure class="screen screen--full parallax-card" data-mobile-index="01 / 01" data-mobile-title="NEXUS TELEMETRY">
+            <div class="screen__tilt">
+              <div class="screen__bar"><i></i><i></i><i></i><small>nexus / telemetry / 2026</small></div>
+              <img src="./assets/nexus-erp.webp" alt="Interface de Telemetria e Dashboard Nexus Core" width="1400" height="788" loading="lazy" />
+            </div>
+          </figure>
+          <div class="case__stamp" aria-hidden="true">SaaS · 2026 · CLOUD CORE ·</div>
+          <div class="case__glow" aria-hidden="true"></div>
+          <div class="case__warp-label" aria-hidden="true"><span>TELEMETRY</span><i></i><b>LIVE METRICS</b></div>
+        </div>
+
+        <div class="case__foot reveal-up">
+          <ul>
+            <li>Dashboard em tempo real</li>
+            <li>Telemetria de instâncias</li>
+            <li>Alta escalabilidade</li>
+            <li>APIs assíncronas</li>
+          </ul>
+          <a href="#contact" class="case__cta">Solicitar demonstração <svg class="icon-arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+        </div>
+      </article>
+
+      <!-- CASE 03: AURA COMMERCE -->
+      <article class="case" data-cursor="VER" id="case-aura">
+        <div class="case__head reveal-up">
+          <div>
+            <span class="case__meta">03 / Headless Commerce · Experiência Digital</span>
+            <h2>AURA<br><em>COMMERCE</em></h2>
+          </div>
+          <p>Experiência de e-commerce minimalista e ultra-veloz: checkout instantâneo, catálogo dinâmico e microinterações cinematográficas.</p>
+        </div>
+
+        <div class="case__visual case__visual--wide tilt-zone">
+          <div class="case__background" aria-hidden="true">
+            <span>AURA</span><span>03</span>
+          </div>
+          <figure class="screen screen--full parallax-card" data-mobile-index="01 / 01" data-mobile-title="AURA COMMERCE">
+            <div class="screen__tilt">
+              <div class="screen__bar"><i></i><i></i><i></i><small>aura / commerce / flagship</small></div>
+              <img src="./assets/aura-commerce.webp" alt="Interface de E-commerce de Luxo Aura Commerce" width="1400" height="788" loading="lazy" />
+            </div>
+          </figure>
+          <div class="case__stamp" aria-hidden="true">COMMERCE · 2026 · FLAGSHIP ·</div>
+          <div class="case__glow" aria-hidden="true"></div>
+          <div class="case__warp-label" aria-hidden="true"><span>HEADLESS</span><i></i><b>FAST FLOW</b></div>
+        </div>
+
+        <div class="case__foot reveal-up">
+          <ul>
+            <li>Catálogo dinâmico</li>
+            <li>Checkout em 1-clique</li>
+            <li>Headless architecture</li>
+            <li>Microinterações fluidas</li>
+          </ul>
+          <a href="#contact" class="case__cta">Solicitar projeto similar <svg class="icon-arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-top section-top--light reveal-up">
+        <span>[ Capacidades ]</span>
+        <span>O que construo</span>
+      </div>
+
+      <div class="services__intro">
+        <h2 class="split-words">Do primeiro fluxo à experiência final.</h2>
+        <p class="reveal-up">Uma solução boa junta tecnologia, clareza e uso real. Não construo só telas: construo o caminho inteiro.</p>
+      </div>
+
+      <div class="service-list">
+        <article class="service-row reveal-up" data-cursor="WEB">
+          <span>01</span><h3>Sistemas web sob medida</h3><p>Ferramentas feitas ao redor do processo do seu negócio.</p><b><svg class="icon-arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></b>
+        </article>
+        <article class="service-row reveal-up" data-cursor="UX">
+          <span>02</span><h3>Sites & experiências digitais</h3><p>Interfaces rápidas, fortes e pensadas para comunicar valor.</p><b><svg class="icon-arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></b>
+        </article>
+        <article class="service-row reveal-up" data-cursor="API">
+          <span>03</span><h3>APIs & bancos de dados</h3><p>Informação organizada e integrações que conversam entre si.</p><b><svg class="icon-arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></b>
+        </article>
+        <article class="service-row reveal-up" data-cursor="AUTO">
+          <span>04</span><h3>Automação & evolução</h3><p>Menos trabalho repetitivo e uma base pronta para crescer.</p><b><svg class="icon-arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></b>
+        </article>
+      </div>
+    </section>
+
+    <section class="tech" aria-label="Tecnologias">
+      <div class="tech__sticky">
+        <span class="tech__label reveal-up">[ Stack aplicada ]</span>
+        <h2 class="tech__title split-words">TECNOLOGIA<br>QUE SAI DO<br><em>SLIDE.</em></h2>
+        <p class="reveal-up">Ferramentas escolhidas para entregar, manter e evoluir — sem empilhar tecnologia só para parecer sofisticado.</p>
+      </div>
+      <div class="tech__list">
+        <article class="tech-item reveal-up"><span>01</span><h3>HTML / CSS / JavaScript</h3><small>Front-end</small></article>
+        <article class="tech-item reveal-up"><span>02</span><h3>Node.js / APIs HTTP</h3><small>Backend</small></article>
+        <article class="tech-item reveal-up"><span>03</span><h3>SQLite / Dados</h3><small>Persistência</small></article>
+        <article class="tech-item reveal-up"><span>04</span><h3>PWA / Service Worker</h3><small>Experiência</small></article>
+        <article class="tech-item reveal-up"><span>05</span><h3>Cloudflare / PM2</h3><small>Infraestrutura</small></article>
+        <article class="tech-item reveal-up"><span>06</span><h3>.NET / XML / QR</h3><small>Integrações</small></article>
+      </div>
+    </section>
+
+    <!-- SOFTTEC LAB / INTERACTIVE EXPERIMENTS -->
+    <section class="lab" id="lab" aria-label="SoftTec Lab Experiments">
+      <div class="section-top reveal-up">
+        <span>[ SoftTec Lab / Playground ]</span>
+        <span>Experimentos em tempo real</span>
+      </div>
+
+      <div class="lab__intro">
+        <h2 class="split-words">ENGENHARIA INTERATIVA.</h2>
+        <p class="reveal-up">Micro-módulos e telemetria construídos com APIs nativas da web moderna.</p>
+      </div>
+
+      <div class="lab__grid">
+        <!-- EXP 01: REAL-TIME LATENCY RADAR -->
+        <article class="lab-card reveal-up" data-lab="latency">
+          <div class="lab-card__head">
+            <span>EXP_01</span>
+            <span class="lab-status"><i class="live-dot"></i> LIVE BENCHMARK</span>
+          </div>
+          <h3>Latência em Tempo Real</h3>
+          <p>Medição dinâmica de framerate e render loop da sua GPU.</p>
+          <div class="lab-meter">
+            <div class="lab-meter__dial">
+              <strong id="lab-fps">60</strong>
+              <small>FPS</small>
+            </div>
+            <div class="lab-meter__bars" id="lab-fps-bars">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+          <button class="lab-btn" id="lab-ping-btn" type="button">
+            <span>EXECUTAR STRESS TEST</span>
+          </button>
+        </article>
+
+        <!-- EXP 02: KINETIC ACCENT TUNER -->
+        <article class="lab-card reveal-up" data-lab="tuner">
+          <div class="lab-card__head">
+            <span>EXP_02</span>
+            <span class="lab-status">CHROMA TUNER</span>
+          </div>
+          <h3>Luz &amp; Acento Visual</h3>
+          <p>Alterne a temperatura de luz e os shaders do estúdio.</p>
+          <div class="lab-swatches">
+            <button class="swatch swatch--coral is-active" data-color="#ff5b45" aria-label="Coral Flame"></button>
+            <button class="swatch swatch--cyan" data-color="#00f0ff" aria-label="Cyber Cyan"></button>
+            <button class="swatch swatch--lime" data-color="#6eff9a" aria-label="Acid Lime"></button>
+            <button class="swatch swatch--violet" data-color="#c44dff" aria-label="Electric Violet"></button>
+          </div>
+          <div class="lab-color-code">
+            <span>VAR(--HOT):</span>
+            <strong id="lab-color-val">#FF5B45</strong>
+          </div>
+        </article>
+
+        <!-- EXP 03: MATRIX CIPHER STREAM -->
+        <article class="lab-card reveal-up" data-lab="cipher">
+          <div class="lab-card__head">
+            <span>EXP_03</span>
+            <span class="lab-status">HASH GENERATOR</span>
+          </div>
+          <h3>Cifra &amp; Telemetria</h3>
+          <p>Geração de hashes SHA e decodificação contínua.</p>
+          <div class="lab-cipher">
+            <code id="lab-cipher-code">0x7F_4A99C2_SOFTTEC_STREAM</code>
+          </div>
+          <button class="lab-btn" id="lab-cipher-btn" type="button">
+            <span>GERAR NOVA CIPHER STREAM</span>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__photo-wrap reveal-up" data-cursor="OI">
+        <figure class="about__photo about__art" data-about-art>
+          <img class="about__art-bg" src="./assets/softtec-25d-bg.webp" alt="" width="1672" height="941" loading="lazy" aria-hidden="true" />
+          <div class="about__art-grid" aria-hidden="true"></div>
+          <div class="about__art-glow" aria-hidden="true"></div>
+          <img class="about__art-person" src="./assets/ruan-25d.webp" alt="Ruan Rikelmi, desenvolvedor da SoftTec" width="1086" height="1448" loading="lazy" />
+          <div class="about__art-ui about__art-ui--top" aria-hidden="true"><span>SOFTTEC / 25D</span><b>ONLINE</b></div>
+          <div class="about__art-ui about__art-ui--side" aria-hidden="true"><span>WEB</span><span>AUTOMAÇÃO</span><span>DADOS</span></div>
+          <div class="about__art-orbit" aria-hidden="true"><i></i><i></i></div>
+          <span class="about__art-depth" aria-hidden="true">DEPTH / 02</span>
+        </figure>
+        <span class="about__photo-note">Ruan Rikelmi / Developer — interactive portrait</span>
+      </div>
+      <div class="about__copy">
+        <span class="about__eyebrow reveal-up">[ Quem está por trás ]</span>
+        <h2 class="split-words">Direto com quem pensa, constrói e entrega.</h2>
+        <div class="about__text reveal-up">
+          <p>Na SoftTec, eu junto visão de negócio e desenvolvimento para criar ferramentas que façam sentido no dia a dia.</p>
+          <p>Da ideia à publicação, cada escolha precisa ter um motivo: facilitar, acelerar, organizar ou abrir espaço para crescer.</p>
+        </div>
+        <div class="about__facts reveal-up">
+          <span><b>01</b> Atendimento direto</span>
+          <span><b>02</b> Solução sob medida</span>
+          <span><b>03</b> Evolução contínua</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact" aria-label="Por que a SoftTec">
+      <div class="impact__top section-top reveal-up"><span>[ O que você compra de verdade ]</span><span>Clareza / Velocidade / Controle</span></div>
+      <div class="impact__stage">
+        <div class="impact__orb" aria-hidden="true"><i></i><i></i><i></i></div>
+        <h2 class="impact__title">
+          <span>MENOS</span>
+          <span class="impact__outline">ATRITO.</span>
+          <span>MAIS</span>
+          <span>NEGÓCIO.</span>
+        </h2>
+        <div class="impact__cards">
+          <article data-impact="01"><span>01</span><h3>Operação organizada</h3><p>O sistema acompanha o processo real em vez de obrigar o negócio a caber numa ferramenta genérica.</p></article>
+          <article data-impact="02"><span>02</span><h3>Experiência que posiciona</h3><p>Visual, velocidade e microinterações criam percepção de valor antes mesmo da primeira conversa.</p></article>
+          <article data-impact="03"><span>03</span><h3>Base pronta para evoluir</h3><p>Estrutura pensada para ganhar novas funções, integrações e automações conforme a operação cresce.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement" aria-label="Manifesto final">
+      <div class="statement__rail" aria-hidden="true"><span>BUILD</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>SHIP</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>EVOLVE</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>BUILD</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>SHIP</span><i><svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+</svg></i><span>EVOLVE</span></div>
+      <p class="statement__small reveal-up">[ Não é só presença digital ]</p>
+      <h2 class="statement__title">
+        <span>É SOBRE</span>
+        <span class="outline">FAZER O</span>
+        <span>NEGÓCIO <em>FLUIR.</em></span>
+      </h2>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__top reveal-up"><span>[ Tem uma ideia? ]</span><span>Vamos tirar do papel.</span></div>
+      <a class="contact__link magnetic" href="mailto:ruanamr2@gmail.com?subject=Novo%20projeto%20pela%20SoftTec" aria-label="Enviar e-mail para Ruan">
+        <span>VAMOS</span><span>CONVERSAR</span><i><svg class="icon-arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></i>
+      </a>
+      <div class="contact__bottom reveal-up">
+        <div><span>EMAIL</span><a href="mailto:ruanamr2@gmail.com" aria-label="Enviar e-mail para Ruan Rikelmi">ruanamr2@gmail.com</a></div>
+        <div><span>BASE</span><p>São Miguel do Araguaia · GO</p></div>
+        <div><span>STATUS</span><p><i class="live-dot"></i> Disponível para novos projetos</p></div>
+      </div>
+      <a class="whatsapp-fab" href="https://wa.me/5562996743089?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20tenho%20interesse%20em%20um%20projeto." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>SOFTTEC® <b id="year">2026</b></span>
+    <span>DESIGN + DEVELOPMENT</span>
+    <a href="#hero">BACK TO TOP ↑</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js" integrity="sha384-eD5ubmuCcvTdCADWuSchJYE7wcj2nzNr0itbrh6w/KJyBiltSZ8w3VFRBSWu5YQ8" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js" integrity="sha384-qOkzR5Ke/XkQxuGVJ9hpFEpDlcoLtWwVYhnJf06cLIZa2vaIptSqaubivErzmD5O" crossorigin="anonymous"></script>
+  <script>
+    window.__THREE_LOAD_STATE = window.THREE ? 'ready' : 'loading';
+    if (!window.THREE) {
+      const threeFallback = document.createElement('script');
+      threeFallback.src = 'https://unpkg.com/three@0.160.0/build/three.min.js';
+      threeFallback.crossOrigin = 'anonymous';
+      threeFallback.referrerPolicy = 'no-referrer';
+      threeFallback.addEventListener('load', () => {
+        window.__THREE_LOAD_STATE = window.THREE ? 'ready' : 'failed';
+        window.dispatchEvent(new CustomEvent(window.THREE ? 'softtec:three-ready' : 'softtec:three-error'));
+      }, { once: true });
+      threeFallback.addEventListener('error', () => {
+        window.__THREE_LOAD_STATE = 'failed';
+        window.dispatchEvent(new CustomEvent('softtec:three-error'));
+      }, { once: true });
+      document.head.appendChild(threeFallback);
+    }
+  </script>
+  <script src="./softtec.js?v=20261013-v31" defer></script>
+</body>
+</html>
